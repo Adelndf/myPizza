@@ -1,0 +1,147 @@
+.container {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.left {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  flex: 1;
+  padding: 20px;
+}
+.imgsContainer {
+  position: relative;
+  width: 80%;
+  height: 500px;
+}
+.title {
+  font-size: 3rem;
+}
+.price {
+  font-size: 3.5rem;
+  color: var(--main-clr);
+  border-bottom: 1px solid var(--main-clr);
+}
+.desc {
+  color: #777;
+  margin: 20px 0;
+}
+.sizes {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  width: 260px;
+  margin-top: 20px;
+}
+.size {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.size:first-child {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.size:nth-child(2) {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.size:last-child {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+.number {
+  position: absolute;
+  right: -5px;
+  top: 0px;
+  background: teal;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 2px 7px;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.size:hover .number {
+  opacity: 1;
+  top: -10px;
+}
+.size:active {
+  transform: scale(0.9);
+}
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 20px 0;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.checkbox {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.add {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.quantity {
+  background: lightgrey;
+  border: none;
+  font-size: 1.2rem;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+.button {
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background: var(--main-clr);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.button:hover {
+  transform: scale(1.05);
+}
+.button:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 30px 0;
+  }
+  .imgsContainer {
+    width: 300px;
+  }
+  .sizes {
+    margin: 20px auto;
+  }
+  .ingredients {
+    justify-content: center;
+  }
+  .add {
+    justify-content: center;
+  }
+}

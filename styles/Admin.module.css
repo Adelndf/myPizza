@@ -1,0 +1,43 @@
+.warpper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container {
+  padding: 50px 0;
+  display: flex;
+  gap: 1rem;
+}
+.item {
+  flex: 1;
+}
+.table {
+  width: 100%;
+  border-spacing: 20px;
+  text-align: left;
+}
+.btn {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+}
+.btn:first-child {
+  background-color: teal;
+  margin-right: 10px;
+}
+.btn:last-child {
+  background-color: crimson;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 968px) {
+  .container {
+    flex-direction: column;
+  }
+  .item {
+    flex: auto;
+  }
+}

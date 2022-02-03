@@ -1,0 +1,17 @@
+.btn {
+  background: teal;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn:hover {
+  background: rgb(0, 175, 175);
+}
+.btn:active {
+  transform: scale(0.9);
+}
